@@ -12,7 +12,7 @@ _✨ Nonebot2 简易插件随个人，随个群友当幸运观众🤪 ✨_
 
 
 <a href="./LICENSE">
-    <img src="https://img.shields.io/github/license/owner/nonebot-plugin-person.svg" alt="license">
+    <img src="https://img.shields.io/github/license/jcjrobert/nonebot-plugin-person.svg" alt="license">
 </a>
 <a href="https://pypi.python.org/pypi/nonebot-plugin-person">
     <img src="https://img.shields.io/pypi/v/nonebot-plugin-person.svg" alt="pypi">
@@ -66,7 +66,7 @@ _✨ Nonebot2 简易插件随个人，随个群友当幸运观众🤪 ✨_
 <summary>从 github 安装</summary>
 在 nonebot2 项目的插件目录下, 打开命令行, 输入以下命令克隆此储存库
 
-    git clone https://github.com/owner/nonebot-plugin-person.git
+    git clone https://github.com/jcjrobert/nonebot-plugin-person.git
 
 打开 nonebot2 项目的 `bot.py` 文件, 在其中写入
 
