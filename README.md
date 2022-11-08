@@ -82,7 +82,7 @@ _✨ Nonebot2 简易插件随个人，随个群友当幸运观众🤪 ✨_
 |:-----:|:----:|:----:|:----:|
 | PERSON_SHOW_AVATAR | 否 | true | 是否显示头像，默认显示 |
 | PERSON_EXTRA_MESSAGES | 否 | [] | 自定义文案，{name}会替换成Bot昵称，{person}会替换成抽到的人的信息，没有这两项依然能展示 |
-| PERSON_EXTRA_OVERWRITE | 否 | false | 自定义文案是否覆盖已有文案，默认不覆盖 |
+| PERSON_EXTRA_MESSAGES_OVERWRITE | 否 | false | 自定义文案是否覆盖已有文案，默认不覆盖 |
 
 ## 🎉 使用
 
