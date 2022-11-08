@@ -74,6 +74,16 @@ _✨ Nonebot2 简易插件随个人，随个群友当幸运观众🤪 ✨_
 
 </details>
 
+## ⚙️ 配置
+
+可在 nonebot2 项目的`.env`文件中添加下表中的配置
+
+| 配置项 | 必填 | 默认值 | 说明 |
+|:-----:|:----:|:----:|:----:|
+| PERSON_SHOW_AVATAR | 否 | true | 是否显示头像，默认显示 |
+| PERSON_EXTRA_MESSAGES | 否 | [] | 自定义文案，{name}会替换成Bot昵称，{person}会替换成抽到的人的信息，没有这两项依然能展示 |
+| PERSON_EXTRA_OVERWRITE | 否 | false | 自定义文案是否覆盖已有文案，默认不覆盖 |
+
 ## 🎉 使用
 
 随个人
@@ -86,16 +96,32 @@ _✨ Nonebot2 简易插件随个人，随个群友当幸运观众🤪 ✨_
 
 ## 📝 TODO LIST
 
-- 支持自定义文案，同时支持是否覆盖原文案
-- 输出格式设置
+- 输出格式设置（不过不是很需要？）
 
 ## 📝 更新日志
 
 <details>
 <summary>展开/收起</summary>
 
+### 0.0.2
+
+- 支持头像显示
+- 支持自定义文案，同时支持是否覆盖原文案
+
 ### 0.0.1
 
 - 插件初次发布
 
 </details>
+
+## 开源许可
+
+本项目使用[MIT](./LICENSE)许可证开源
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
