@@ -9,7 +9,7 @@ with open("README.md", "r", encoding="utf-8", errors="ignore") as f:
         author_email='jcjrobbie@gmail.com',
         keywords=["pip", "nonebot2", "nonebot", "随个人"],
         url='https://github.com/jcjrobert/nonebot-plugin-person',
-        description='Nonebot2 通用抽图/语音插件',
+        description='Nonebot2 简易插件随个人，随个群友当幸运观众🤪',
         long_description=long_description,
         long_description_content_type="text/markdown",
         classifiers=[
