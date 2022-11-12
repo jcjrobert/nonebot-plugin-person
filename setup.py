@@ -4,7 +4,7 @@ with open("README.md", "r", encoding="utf-8", errors="ignore") as f:
     long_description = f.read()
     setuptools.setup(
         name='nonebot-plugin-person',
-        version='0.0.2',
+        version='0.0.3',
         author='jcjrobert',
         author_email='jcjrobbie@gmail.com',
         keywords=["pip", "nonebot2", "nonebot", "随个人"],
