@@ -83,6 +83,7 @@ _✨ Nonebot2 简易插件随个人，随个群友当幸运观众🤪 ✨_
 | PERSON_SHOW_AVATAR | 否 | true | 是否显示头像，默认显示 |
 | PERSON_EXTRA_MESSAGES | 否 | [] | 自定义文案，{name}会替换成Bot昵称，{person}会替换成抽到的人的信息，没有这两项依然能展示 |
 | PERSON_EXTRA_MESSAGES_OVERWRITE | 否 | false | 自定义文案是否覆盖已有文案，默认不覆盖 |
+| PERSON_AT | 否 | false | 是否at随人对象，将会替换QQ号放在消息结尾 |
 
 ## 🎉 使用
 
@@ -94,14 +95,14 @@ _✨ Nonebot2 简易插件随个人，随个群友当幸运观众🤪 ✨_
 
 ...
 
-## 📝 TODO LIST
-
-- 输出格式设置（不过不是很需要？）
-
 ## 📝 更新日志
 
 <details>
 <summary>展开/收起</summary>
+
+### 0.0.3
+
+- 支持AT随人对象
 
 ### 0.0.2
 

@@ -26,11 +26,16 @@ async def get_person_send(bot:Bot,event:GroupMessageEvent):
     group_id = event.group_id
     group_member_list = await bot.get_group_member_list(group_id=group_id)
     member = random.choice(group_member_list)
+    person = f"{member['card'] if member['card'] else member['nickname']}"
+    if not person_config.person_at:
+        person += f"（{member['user_id']}）"
     tosend = random.choice(messages) \
-                .replace("{person}",f"{member['card'] if member['card'] else member['nickname']}（{member['user_id']}）") \
+                .replace("{person}",person) \
                 .replace("{name}",nickname)
     if person_config.person_show_avatar:
         avatar = f"http://q1.qlogo.cn/g?b=qq&nk={member['user_id']}&s=640"
         avatar = MessageSegment.image(file=avatar)
         tosend = "\n" + avatar + "\n" + tosend
+        if person_config.person_at:
+            tosend += MessageSegment.at(user_id=member['user_id'])
     await bot.send(event=event,message=tosend,at_sender=True)
