@@ -58,7 +58,7 @@ _✨ Nonebot2 简易插件随个人，随个群友当幸运观众🤪 ✨_
 
 打开 nonebot2 项目的 `bot.py` 文件, 在其中写入
 
-    nonebot.load_plugin('nonebot_plugin_person')
+    nonebot.load_plugin('nonebot-plugin-person')
 
 </details>
 
@@ -70,7 +70,7 @@ _✨ Nonebot2 简易插件随个人，随个群友当幸运观众🤪 ✨_
 
 打开 nonebot2 项目的 `bot.py` 文件, 在其中写入
 
-    nonebot.load_plugin('src.plugins.nonebot_plugin_person')
+    nonebot.load_plugin('src.plugins.nonebot-plugin-person')
 
 </details>
 
@@ -99,6 +99,10 @@ _✨ Nonebot2 简易插件随个人，随个群友当幸运观众🤪 ✨_
 
 <details>
 <summary>展开/收起</summary>
+
+### 0.0.4
+
+- 修复机器人昵称配置为空时报错的BUG
 
 ### 0.0.3
 

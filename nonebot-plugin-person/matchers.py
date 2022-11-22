@@ -18,7 +18,7 @@ messages = [
 ]
 messages = messages + person_config.person_extra_messages \
     if not person_config.person_extra_messages_overwrite else person_config.person_extra_messages
-nickname = list(person_config.nickname)[0]
+nickname = person_config.nickname[0]
 
 get_person = on_command("随个人",priority=12)
 @get_person.handle()
