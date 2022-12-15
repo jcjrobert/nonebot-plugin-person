@@ -1,4 +1,5 @@
 from nonebot import on_command
+from nonebot.log import logger
 from nonebot.adapters.onebot.v11 import (
     Bot,
     GroupMessageEvent,
@@ -6,6 +7,7 @@ from nonebot.adapters.onebot.v11 import (
 )
 
 import random
+from datetime import datetime
 
 from .config import person_config
 
@@ -25,6 +27,15 @@ get_person = on_command("随个人",priority=12)
 async def get_person_send(bot:Bot,event:GroupMessageEvent):
     group_id = event.group_id
     group_member_list = await bot.get_group_member_list(group_id=group_id)
+    if person_config.person_choose_last:
+        group_member_list_last = [i for i in group_member_list if int(datetime.now().timestamp()) - i['last_sent_time'] < person_config.person_choose_last_time]
+        if person_config.person_check_last:
+            logger.info([(i['user_id'],i['nickname'],datetime.fromtimestamp(i['last_sent_time']).strftime("%Y-%m-%d %H:%M:%S")) for i in group_member_list])
+            logger.info([(i['user_id'],i['nickname'],datetime.fromtimestamp(i['last_sent_time']).strftime("%Y-%m-%d %H:%M:%S")) for i in group_member_list_last])
+        if group_member_list_last:
+            group_member_list = group_member_list_last
+        else:
+            logger.error("当前群内没有指定时间内活跃的群友，默认抽取全部群友")
     member = random.choice(group_member_list)
     person = f"{member['card'] if member['card'] else member['nickname']}"
     if not person_config.person_at:

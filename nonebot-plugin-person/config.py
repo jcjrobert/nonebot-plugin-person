@@ -9,6 +9,9 @@ class Config(BaseModel, extra=Extra.ignore):
     person_extra_messages: List[str] = []
     person_extra_messages_overwrite: bool = False
     person_at: bool = False
+    person_choose_last: bool = False
+    person_choose_last_time: int = 2592000
+    person_check_last: bool = False
 
     @validator("nickname")
     @classmethod
