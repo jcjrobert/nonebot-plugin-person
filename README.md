@@ -85,7 +85,7 @@ _✨ Nonebot2 简易插件随个人，随个群友当幸运观众🤪 ✨_
 | person_extra_messages_overwrite | 否 | false | 自定义文案是否覆盖已有文案，默认不覆盖 |
 | person_at | 否 | false | 是否at随人对象，将会替换QQ号放在消息结尾 |
 | person_choose_last | 否 | false | 是否仅抽取最近发言的群友，默认否 |
-| person_choose_last_time | 2592000 | false | 最近发言时间范围，默认为2592000（30天） |
+| person_choose_last_time | 否 | 2592000 | 最近发言时间范围，默认为2592000（30天） |
 | person_check_last | 否 | false | 日志打印，用于检查群友最近发言时间 |
 
 注意，不要将最近发言时间范围设置的太短，因为API获取到的最近发言时间戳经测试并不同步，如果有更好的方案欢迎提出issue或pr
